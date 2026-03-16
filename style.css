@@ -116,3 +116,24 @@ footer {
     color: var(--meta-color);
     font-size: 0.85rem;
 }
+
+/* Style pour les citations (façon Medium) */
+.article-content blockquote {
+    border-left: 3px solid var(--text-color); /* La fameuse ligne verticale gauche */
+    padding-left: 1.5rem; /* Espace entre la ligne et le texte */
+    margin: 2.5rem 0; /* Aère bien la citation par rapport au reste du texte */
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 1.5rem; /* Un texte légèrement plus grand pour accrocher l'œil */
+    font-style: italic;
+    color: var(--meta-color); /* Une couleur un peu plus douce que le texte principal */
+    line-height: 1.4;
+}
+
+/* Optionnel : si vous voulez que l'auteur de la citation ressorte bien */
+.article-content blockquote strong {
+    color: var(--text-color);
+    font-style: normal;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 1rem;
+}
